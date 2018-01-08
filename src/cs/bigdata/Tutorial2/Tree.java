@@ -81,7 +81,7 @@ public class Tree {
 		//localSrc when not used within hadoop
 		//String localSrc = System.getProperty("user.dir") + "/arbres.csv";
 		
-		String localSrc = "/user/cloudera/" + args[0];
+		String localSrc = args[0];
 		Path path = new Path(localSrc);
 		//Open the file
 		Configuration conf = new Configuration();
